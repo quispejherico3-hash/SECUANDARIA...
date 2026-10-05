@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Institucional | I.E. María Luz Guillén Espinoza - Chipa</title>
+    <!-- Google Fonts y FontAwesome para iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- CABECERA Y NAVEGACIÓN -->
+    <header class="header-principal">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>I.E. María Luz Guillén Espinoza</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#tablero">Tablero</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#profesores">Docentes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Educación Secundaria con Orgullo en el Corazón de Pasco</h1>
+            <p>Centro Poblado de Chipa, Ninacaca — Formando el futuro de la juventud de nuestra comunidad con excelencia y compromiso.</p>
+            <a href="#tablero" class="btn-neon">Ver Comunicados</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN INSTITUCIONAL (Misión, Visión) -->
+    <section id="nosotros" class="seccion container">
+        <h2 class="titulo-seccion">Nuestra Institución</h2>
+        <div class="grid-2">
+            <div class="card-glass">
+                <i class="fa-solid fa-bullseye icono-destacado"></i>
+                <h3>Misión</h3>
+                <p>Brindar una educación secundaria integral y de calidad a los estudiantes de la zona rural de Chipa, promoviendo valores andinos, identidad cultural y herramientas tecnológicas para afrontar los retos superiores y laborales del mañana.</p>
+            </div>
+            <div class="card-glass">
+                <i class="fa-solid fa-eye icono-destacado"></i>
+                <h3>Visión</h3>
+                <p>Ser una institución educativa secundaria líder en la región rural de Pasco, reconocida por su alto nivel académico, innovación constante y el éxito formativo de nuestros egresados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN HORARIOS REALES -->
+    <section id="horarios" class="seccion container">
+        <h2 class="titulo-seccion">Horario Escolar Partidario</h2>
+        <div class="card-glass">
+            <p class="horario-desc">Organización de las jornadas académicas de educación secundaria adaptadas a las condiciones climáticas y geográficas de Chipa:</p>
+            <div class="horario-grid">
+                <div class="bloque-horario">
+                    <h4>Turno Mañana</h4>
+                    <span class="hora">08:00 AM — 01:00 PM</span>
+                    <p>Desarrollo de áreas curriculares prioritarias del nivel secundario (Matemática, Comunicación, Ciencia y Tecnología, etc.).</p>
+                </div>
+                <div class="bloque-horario">
+                    <h4>Turno Tarde</h4>
+                    <span class="hora">02:30 PM — 04:30 PM</span>
+                    <p>Talleres prácticos, reforzamiento escolar y actividades socioculturales orientadas a los grados de secundaria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLERO DE ANUNCIOS INTERACTIVO -->
+    <section id="tablero" class="seccion container">
+        <h2 class="titulo-seccion">Tablero de Anuncios y Comunicados</h2>
+        
+        <!-- Filtros interactivos -->
+        <div class="filtros-container">
+            <button class="btn-filtro activo" data-filtro="todos">Todos</button>
+            <button class="btn-filtro" data-filtro="general">General</button>
+            <button class="btn-filtro" data-filtro="secundaria">Secundaria</button>
+            <button class="btn-filtro" data-filtro="urgente">Urgente</button>
+        </div>
+
+        <!-- Contenedor dinámico inyectado por script.js -->
+        <div id="contenedor-tarjetas" class="grid-anuncios"></div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA: INFRAESTRUCTURA Y ALUMNADO -->
+    <section id="galeria" class="seccion container">
+        <h2 class="titulo-seccion">Nuestra I.E. y Alumnado</h2>
+        <div class="grid-2">
+            <div class="card-galeria">
+                <img src="colegio-chipa.jpg" alt="I.E. María Luz Guillén Espinoza - Chipa" class="foto-institucional" onerror="this.src='https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80'">
+                <div class="info-galeria">
+                    <h3>Infraestructura Institucional</h3>
+                    <p>Espacios dedicados al aprendizaje de nuestros jóvenes en Chipa, Ninacaca.</p>
+                </div>
+            </div>
+            <div class="card-galeria">
+                <img src="alumnos-chipa.jpg" alt="Alumnos de la I.E. María Luz Guillén" class="foto-institucional" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80'">
+                <div class="info-galeria">
+                    <h3>Nuestros Estudiantes</h3>
+                    <p>Juventud estudiosa de secundaria comprometida con el desarrollo de Pasco.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PLANA DOCENTE (9 Profesores Oficiales) -->
+    <section id="profesores" class="seccion container">
+        <h2 class="titulo-seccion">Plana Docente Oficial — Secundaria</h2>
+        <div class="grid-profesores">
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-user-tie"></i></div>
+                <h3>Ricardo SOLIS CHACON</h3>
+                <span class="cargo">Matemática / Director</span>
+            </div>
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Betyna Sandra SANCHEZ FERRER</h3>
+                <span class="cargo">Ciencia y Tecnología</span>
+            </div>
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Rubén SERNA TRINIDAD</h3>
+                <span class="cargo">Educación para el Trabajo</span>
+            </div>
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Tania Fortunata SALCEDO PALOMINO</h3>
+                <span class="cargo">Comunicación</span>
+            </div>
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Peter MAMANI HUISA</h3>
+                <span class="cargo">Arte y Cultura</span>
+            </div>
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Nilda MALPARTIDA BLAS</h3>
+                <span class="cargo">Ciencias Sociales</span>
+            </div>
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>César PINTO ESPINOZA</h3>
+                <span class="cargo">Matemática</span>
+            </div>
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Milagros BENAVIDES CRISTOBAL</h3>
+                <span class="cargo">Educación Religiosa</span>
+            </div>
+            <div class="card-docente">
+                <div class="avatar-docente"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>Cinthia Carmen CONDEZO DELGADILLO</h3>
+                <span class="cargo">Comunicación</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y MESA DE PARTES -->
+    <section id="contacto" class="seccion container">
+        <h2 class="titulo-seccion">Mesa de Partes y Contacto Directo</h2>
+        <div class="grid-2">
+            <!-- Formulario de Consulta -->
+            <div class="card-glass">
+                <i class="fa-solid fa-envelope-open-text icono-destacado"></i>
+                <h3>Escríbanos un Mensaje</h3>
+                <p style="margin-bottom: 1.5rem;">Padres de familia y estudiantes pueden enviar consultas directas a la Dirección de la I.E.</p>
+                
+                <form id="formContacto" class="formulario-contacto">
+                    <div class="form-group">
+                        <label for="nombreRemitente">Nombre y Apellidos</label>
+                        <input type="text" id="nombreRemitente" required placeholder="Ej. Juan Pérez (Padre de familia)">
+                    </div>
+                    <div class="form-group">
+                        <label for="asuntoMensaje">Asunto</label>
+                        <input type="text" id="asuntoMensaje" required placeholder="Ej. Constancia de estudios, matrícula...">
+                    </div>
+                    <div class="form-group">
+                        <label for="textoMensaje">Mensaje</label>
+                        <textarea id="textoMensaje" rows="4" required placeholder="Escriba su consulta detallada aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-neon" style="width: 100%; border: none; cursor: pointer;">Enviar a Dirección</button>
+                </form>
+            </div>
+
+            <!-- Información y WhatsApp Directo del Director -->
+            <div class="card-glass" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <i class="fa-solid fa-headset icono-destacado"></i>
+                    <h3>Atención Institucional</h3>
+                    <p style="margin-bottom: 1.5rem;">Canales oficiales de comunicación directa con el Director <strong>Prof. Ricardo Solis Chacon</strong> para la comunidad de Chipa.</p>
+                    
+                    <ul class="lista-contacto">
+                        <li><i class="fa-solid fa-location-dot"></i> Centro Poblado de Chipa, Ninacaca, Pasco</li>
+                        <li><i class="fa-solid fa-clock"></i> Lunes a Viernes: 08:00 AM — 04:00 PM</li>
+                        <li><i class="fa-solid fa-user-tie"></i> Director: Prof. Ricardo Solis Chacon</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/51963642884?text=Hola%20Director%20Ricardo%20Solis,%20le%20escribo%20desde%20el%20Portal%20Digital%20de%20la%20I.E.%20Maria%20Luz%20Guillen%20Espinoza." target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Chat Directo con Dirección (WhatsApp)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESO RÁPIDO PARA EL DIRECTOR (Panel de Publicación) -->
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 2000;">
+        <button id="btnAbrirAdmin" class="btn-neon" style="font-size: 0.85rem; padding: 0.5rem 1rem; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+            <i class="fa-solid fa-lock"></i> Panel Director
+        </button>
+    </div>
+
+    <!-- MODAL / VENTANA FLOTANTE DE ADMINISTRACIÓN CON CLAVE Y GESTIÓN DE BORRADO -->
+    <div id="modalAdmin" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); backdrop-filter: blur(5px); z-index: 3000; justify-content: center; align-items: center; padding: 1rem;">
+        <div class="card-glass" style="max-width: 600px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative;">
+            <button id="btnCerrarAdmin" style="position: absolute; top: 15px; right: 15px; background: transparent; border: none; color: var(--text-secondary); font-size: 1.25rem; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+            
+            <h3 style="margin-bottom: 1rem; color: var(--accent-blue);"><i class="fa-solid fa-lock"></i> Panel de Dirección - Gestión</h3>
+            <p style="font-size: 0.85rem; margin-bottom: 1.5rem; color: var(--text-secondary);">Acceso exclusivo para el Prof. Ricardo Solis Chacon.</p>
+            
+            <!-- PASO 1: VERIFICACIÓN DE CLAVE -->
+            <div id="seccionClave">
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label for="inputClaveDirector">Clave Secreta del Director</label>
+                    <input type="password" id="inputClaveDirector" placeholder="Digite la clave de acceso...">
+                </div>
+                <button type="button" id="btnVerificarClave" class="btn-neon" style="width: 100%; border: none; cursor: pointer;">Ingresar al Panel</button>
+            </div>
+
+            <!-- PASO 2: PANEL DE ADMINISTRACIÓN (Oculto hasta ingresar clave correcta) -->
+            <div id="panelGestionAdmin" style="display: none;">
+                
+                <!-- Formulario de Publicación -->
+                <form id="formAdminAnuncio" class="formulario-contacto" style="margin-bottom: 2rem;">
+                    <h4 style="margin-bottom: 1rem; color: var(--accent-cyan); font-size: 1rem;"><i class="fa-solid fa-bullhorn"></i> Publicar Nuevo Anuncio</h4>
+                    
+                    <div class="form-group">
+                        <label for="adminTitulo">Título del Comunicado</label>
+                        <input type="text" id="adminTitulo" required placeholder="Ej. Entrega de libretas...">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminCategoria">Categoría</label>
+                        <select id="adminCategoria" style="background-color: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 8px; padding: 0.75rem 1rem; color: var(--text-primary); outline: none;">
+                            <option value="general" style="background: #161b22;">General</option>
+                            <option value="secundaria" style="background: #161b22;">Secundaria</option>
+                            <option value="urgente" style="background: #161b22;">Urgente</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="adminFecha">Fecha Visible</label>
+                        <input type="text" id="adminFecha" required placeholder="Ej. 05 de Octubre, 2026">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminAfiche">Seleccionar Imagen o Afiche</label>
+                        <input type="file" id="adminAfiche" accept="image/*" required style="background-color: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 8px; padding: 0.5rem; color: var(--text-primary); cursor: pointer; width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminDescripcion">Descripción del Anuncio</label>
+                        <textarea id="adminDescripcion" rows="3" required placeholder="Detalles completos..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-neon" style="width: 100%; border: none; cursor: pointer;">Publicar en el Tablero</button>
+                </form>
+
+                <hr style="border: 0; border-top: 1px solid var(--border-glass); margin-bottom: 1.5rem;">
+
+                <!-- Lista de Anuncios Existentes para Borrar -->
+                <h4 style="margin-bottom: 1rem; color: #ff5555; font-size: 1rem;"><i class="fa-solid fa-trash-can"></i> Gestionar / Eliminar Comunicados Publicados</h4>
+                <div id="listaAdminBorrar" style="display: flex; flex-direction: column; gap: 0.75rem; max-height: 250px; overflow-y: auto;">
+                    <!-- Se llena dinámicamente con JS -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 I.E. María Luz Guillén Espinoza - Centro Poblado de Chipa, Ninacaca, Pasco.</p>
+        <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.3rem;">Desarrollado con orgullo por el estudiante JHERICO | Aprobado por el Inst. Juan Vilches</p>
+    </footer>
+
+    <!-- Lógica JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
